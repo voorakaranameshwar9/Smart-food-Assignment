@@ -1,0 +1,228 @@
+/* Food-Themed Background Styling with Real Images */
+
+/* Hero background for Dashboard */
+.content.hero-background {
+    position: relative;
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(229, 246, 239, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+    background-repeat: repeat, no-repeat;
+}
+
+/* Alternative food backgrounds */
+.content.hero-background-alt1 {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.91) 0%, rgba(229, 246, 239, 0.86) 100%),
+        url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+.content.hero-background-alt2 {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(229, 246, 239, 0.84) 100%),
+        url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+.content.hero-background-alt3 {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(229, 246, 239, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1495563014258-aae12d5ec641?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+/* Food pattern overlay background */
+.food-pattern-bg {
+    position: relative;
+}
+
+.food-pattern-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(180deg, rgba(8, 127, 91, 0.01) 0%, transparent 50%, rgba(8, 127, 91, 0.01) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Organic shapes background */
+.organic-shapes-bg {
+    position: relative;
+    background: linear-gradient(135deg, #f5f8f6 0%, #e5f6ef 100%);
+}
+
+.organic-shapes-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 15% 20%, rgba(8, 127, 91, 0.05) 0%, transparent 25%),
+        radial-gradient(circle at 85% 80%, rgba(13, 155, 110, 0.04) 0%, transparent 25%),
+        radial-gradient(ellipse 800px 600px at 50% 50%, transparent 0%, rgba(8, 127, 91, 0.01) 100%);
+    pointer-events: none;
+}
+
+/* Glass-morphism cards on food background */
+.glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 252, 250, 0.85) 100%);
+    border: 1px solid rgba(8, 127, 91, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(8, 127, 91, 0.1);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.glass-card:hover {
+    box-shadow: 0 12px 48px rgba(8, 127, 91, 0.15);
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 252, 250, 0.9) 100%);
+}
+
+/* Gradient text for food theme */
+.food-gradient-text {
+    background: linear-gradient(135deg, #087f5b 0%, #0d9b6e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Food-themed border gradients */
+.food-border-gradient {
+    position: relative;
+    border: 1px solid;
+    border-image: linear-gradient(135deg, #087f5b 0%, #0d9b6e 100%) 1;
+}
+
+/* Animated background for hero section */
+@keyframes subtle-float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.floating-bg {
+    animation: subtle-float 6s ease-in-out infinite;
+}
+
+/* Layered food background effect */
+.layered-food-bg {
+    position: relative;
+    background-color: #f5f8f6;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(8, 127, 91, 0.02) 10px, rgba(8, 127, 91, 0.02) 20px),
+        linear-gradient(135deg, rgba(245, 248, 246, 1) 0%, rgba(229, 246, 239, 0.5) 100%);
+}
+
+/* Page-specific food backgrounds */
+
+/* Suppliers Page Background */
+.content.suppliers-bg {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.91) 0%, rgba(229, 246, 239, 0.86) 100%),
+        url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+/* Queries Page Background */
+.content.queries-bg {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(229, 246, 239, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+/* Raise Query Page Background */
+.content.raise-query-bg {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(229, 246, 239, 0.87) 100%),
+        url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+}
+
+/* Subtle texture overlay */
+.texture-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="2" /></filter><rect width="100" height="100" fill="%23f5f8f6" filter="url(%23noise)" opacity="0.05"/></svg>');
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+/* Food supply cards with background */
+.supply-card-bg {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(245, 252, 250, 0.88) 100%);
+    border: 1px solid rgba(8, 127, 91, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.supply-card-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 0%, rgba(8, 127, 91, 0.08) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.supply-card-bg:hover::before {
+    opacity: 1;
+}
+
+/* Dark mode support - adjust colors for dark backgrounds */
+@media (prefers-color-scheme: dark) {
+    .glass-card {
+        background: linear-gradient(135deg, rgba(50, 80, 65, 0.8) 0%, rgba(30, 60, 50, 0.7) 100%);
+        border: 1px solid rgba(8, 127, 91, 0.3);
+    }
+    
+    .supply-card-bg {
+        background: linear-gradient(135deg, rgba(50, 80, 65, 0.9) 0%, rgba(30, 60, 50, 0.85) 100%);
+    }
+}
+
+/* Form Page Background */
+.form-page {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(229, 246, 239, 0.87) 100%),
+        url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+    min-height: 100vh;
+}
+
+/* Status Page Background */
+.status-page {
+    background: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.91) 0%, rgba(229, 246, 239, 0.86) 100%),
+        url('https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=1600&q=80');
+    background-size: auto, cover;
+    background-position: center, center;
+    background-attachment: scroll, fixed;
+    min-height: 100vh;
+}

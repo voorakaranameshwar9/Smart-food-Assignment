@@ -1,0 +1,9 @@
+com\foodsafe\supplierquery\config\DataLoader.class
+com\foodsafe\supplierquery\controller\QueryController$QueryRequest.class
+com\foodsafe\supplierquery\entity\Query.class
+com\foodsafe\supplierquery\repository\QueryRepository.class
+com\foodsafe\supplierquery\controller\QueryController.class
+com\foodsafe\supplierquery\entity\Supplier.class
+com\foodsafe\supplierquery\SupplierQueryApplication.class
+com\foodsafe\supplierquery\controller\SupplierController.class
+com\foodsafe\supplierquery\repository\SupplierRepository.class
